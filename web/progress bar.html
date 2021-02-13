@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <title>Progress Bar</title>
+    <style>
+     .bar{
+        height: 40px;
+        width: 400px;
+        position: relative;
+        background-color:khaki;
+        border-style: solid;
+        border-color:grey;
+        border-width:thin;
+        }
+      .bar span{
+          display: block;
+          height: 100%;
+      }  
+
+      .progress{
+        background-color:rebeccapurple;
+        animation: progressBar 3s linear;
+        animation-fill-mode:forward; 
+      }
+
+      @keyframes progressBar {
+        0%   { width: 0; }
+         25%  { width: 25%;} 
+        50%  { witdh: 50%;}
+         75%  {width : 75%;} 
+        100% { width: 100%;}
+      }
+
+    </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(20, 147, 220);"><center>Progress Bar</center></h1>
+
+        <div class="bar">
+            <span style="width:100%;"><span class="progress"></span></span>
+        </div>
+    
+
+    </body>
+</html>
